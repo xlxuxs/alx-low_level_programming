@@ -1,15 +1,17 @@
 #include "main.h"
 /*
-*main -  a function that prints the numbers, from 0 to 9,
-*	followed by a new line.
 *
-*@n;intiger from main function
+* print_line - printing lines
 *
+* @n;intiger from main function
 *
+* Return: void
 */
 void print_line(int n)
-{
-	for (int i = n; i > 0; i--)
+	{
+	int i;
+
+	for (i = n; i > 0; i--)
 	{
 	_putchar('_');
 	}
