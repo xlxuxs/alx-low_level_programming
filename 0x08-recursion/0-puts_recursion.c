@@ -9,11 +9,13 @@
  */
 void _puts_recursion(char *s)
 {
-if (s != NULL)
+if (*s == NULL)
 {
-_putchar(*s);
-s += 1;
-_puts_recursion(s);
+_putchar('\n');
+return;
 }
+_putchar(*s);
+s++;
+_puts_recursion(s);
 }
 
