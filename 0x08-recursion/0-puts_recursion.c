@@ -8,13 +8,9 @@
  */
 void _puts_recursion(char *s)
 {
-if (s == "/0")
+if (s != "/0")
 {
-return;
-}
-else
-{
-printf("%c", *s);
+_putchar(*s);
 s += 1;
 _puts_recursion(s);
 }
